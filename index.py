@@ -22,8 +22,8 @@ def generate_names(names, surnames, qty):
 
 
 def main():
-    names = read_file("names.txt")
-    surnames = read_file("surnames.txt")
+    names = read_file("data/names.txt")
+    surnames = read_file("data/surnames.txt")
     max_names = len(names) * len(surnames)
 
     while True:

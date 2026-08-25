@@ -9,4 +9,4 @@ To run the program, use:
 python index.py
 ```
 
-Add a list of names to each file (names.txt and surnames.txt). The program will randomly select a name and a surname from these files and combine them to generate a full name.
+Add a list of names to each file in the `data` folder (`data/names.txt` and `data/surnames.txt`). The program will randomly select a name and a surname from these files and combine them to generate a full name.
