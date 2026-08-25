@@ -3,7 +3,7 @@ import random as rd
 
 def read_file(file_name):
     with open(file_name, "r", encoding="utf-8") as file:
-        return [line.strip() for line in file]
+        return [line.strip() for line in file if line.strip()]
 
 
 def generate_name(names, surnames):
@@ -24,6 +24,11 @@ def generate_names(names, surnames, qty):
 def main():
     names = read_file("data/names.txt")
     surnames = read_file("data/surnames.txt")
+
+    if not names or not surnames:
+        print("The names and surnames files must not be empty.")
+        return
+
     max_names = len(names) * len(surnames)
 
     while True:
